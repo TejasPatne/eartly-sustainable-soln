@@ -25,8 +25,8 @@ const Product = () => {
     ];
     return (
         <div>
-            <div className="flex flex-row space-between mx-5 mb-10 text-lg">
-                <div className='w-1/2'>
+            <div className="md:flex md:flex-row  space-between mx-5 mb-10 text-lg">
+                <div className='md:w-1/2'>
                     <Swiper
                         spaceBetween={30}
                         centeredSlides={true}
@@ -47,7 +47,7 @@ const Product = () => {
                                         whileHover={{
                                             scale: 1.2
                                         }}
-                                        className={"grid-cols-2 hidden px-4 md:inline"}
+                                        className={"md:grid-cols hidden px-4 md:inline"}
                                         src={Slide.image}
                                         alt="slide"
                                     />
@@ -57,7 +57,7 @@ const Product = () => {
                     </Swiper>
                     <h4 className='text-center mt-10 italic text-rose-400'>Scroll down</h4>
                 </div>
-                <div className='w-1/2 mx-8 space-y-5'>
+                <div className='md:w-1/2 mx-8 space-y-5'>
 
                     <h1 className='text-4xl'>Sustainability Starter Kit</h1>
                     <h3 className='text-rose-500 text-xl'>This starter kit is all you need to start the revolution. </h3>
